@@ -1,0 +1,236 @@
+@import './stylesheet.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .6s ease;
+}
+button {
+    border: none;
+    background: none;
+    transition: all .6s ease;
+}
+button:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+
+
+.container {
+    max-width: 1060px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.col-4 {
+    width: 33.33333%;
+}
+.sunset_btn {
+    /* sunset-color */
+    background: #FFA62B;
+    /* light-text-color */
+    color: #FFFFFF;
+    /* sunset-border-color */
+    border: solid 1px #FFA62B;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+.sunset_btn:hover {
+    /* hover-color */
+    color: #FFA62B;
+    background: #FFFFFF;
+}
+.ocean_btn {
+    /* ocean-color */
+    color: #00A0C1;
+    background: #fafafa;
+    border: solid 1px #00A0C1;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+.ocean_btn:hover {
+    color: #fafafa;
+    background: #00A0C1;
+}
+
+
+
+/* HERO */
+.hero {
+    position: relative;
+    height: calc(100vh - 184px);
+    background-image: url("../images/hero/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-top: 184px;
+}
+.hero_container_left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 238px;
+}
+.hero_title {
+    width: 509px;
+    height: 160px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    /* or 138% */
+
+    letter-spacing: 0.2px;
+
+    /* text-color */
+    color: #252B42;
+}
+.hero_text {
+    width: 376px;
+    height: 60px;
+    margin: 35px 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    letter-spacing: 0.2px;
+
+    /*text-color */
+    color: #737373;
+}
+.hero_btn {
+    padding: 10px 36px;
+    border-radius: 37px;
+}
+.hero_get-quote_btn {
+    margin-right: 6px;
+}
+.hero_col-4_card {
+    position: absolute;
+    bottom: -19px;
+
+    width: calc(328px - 40px);
+    height: calc(210px - 78px);
+    padding: 43px 0  35px 40px;
+
+    background-color: #FFFFFF;
+
+    /* SHADOW */
+    /*box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);*/
+}
+.hero_col-4_card:hover {
+    background: #00A0C1;
+    cursor: pointer;
+}
+.hero_col-4_card:hover svg {
+    fill: #FFFFFF;
+    /*transition: all ease .3s;*/
+}
+.hero_col-4_card:hover .hero_col-4_title {
+    color: #FFFFFF;
+}
+.hero_col-4_card:hover .hero_col-4_text {
+    color: #FFFFFF;
+}
+.hero_col-4_img {
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.hero_col-4_card svg{
+    fill: #00A0C1;
+    /*transition: all .3s ease;*/
+}
+.hero_col-4_title {
+    margin: 10px 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.1px;
+
+    /* text-color */
+
+    color: #252B42;
+}
+.hero_col-4_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    letter-spacing: 0.2px;
+
+    /* second-text-color */
+
+    color: #737373;
+}
+
+
+
+/* HEADER */
+.header {
+    position: absolute;
+    top: 36px;
+    left: 195px;
+    width: 503px;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+}
+.header_nav_item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* second-text-color */
+
+    color: #737373;
+}
+.header_nav_item:hover {
+    color: #FFA62B;
+}
+.header_nav_item:not(:last-child) {
+    margin-right: 15px; /* There is already 6px between items (15px + 6px = 21px) */
+}
