@@ -35,8 +35,6 @@ a {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 40px;
 }
 .row {
     display: flex;
@@ -171,12 +169,15 @@ a {
     /*text-color */
     color: #737373;
 }
+.hero_buttons {
+    display: flex;
+}
 .hero_btn {
     padding: 10px 36px;
     border-radius: 37px;
 }
 .hero_get-quote_btn {
-    margin-right: 6px;
+    margin-right: 10px;
 }
 .hero_col-4_card {
     position: absolute;
@@ -284,6 +285,10 @@ a {
     padding: 211px 0 80px 0;
     background: #FAFAFA;
 }
+.features_cards_grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+}
 .features_cards_div {
     padding-top: 50px;
 }
@@ -326,5 +331,74 @@ a {
     text-transform: uppercase;
 
     /* second-text-color */
+    color: #737373;
+}
+
+
+
+/* ADVICE */
+.advice {
+    background: #FAFAFA;
+    padding: 125px 0 100px 0;
+}
+.advice_grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+}
+.advice_text {
+    margin-bottom: 45px;
+}
+.advice_card {
+    height: 342px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #FFFFFF;
+}
+.advice_card:hover {
+    background: #00A0C1;
+
+    transition: all .6s ease;
+}
+.advice_card:hover .advice_card_title {
+    color: #FFFFFF;
+}
+.advice_card:hover .advice_card_text {
+    color: #FFFFFF;
+}
+.advice_card_text-part {
+    padding: 30px 0 0 29px;
+}
+.advice_card_title {
+    width: 130px;
+    margin-bottom: 15px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* text-color */
+
+    color: #252B42;
+}
+.advice_card_text {
+    width: 179px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    letter-spacing: 0.2px;
+
+    /* second-text-color */
+
     color: #737373;
 }
