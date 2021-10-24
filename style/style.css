@@ -22,16 +22,13 @@ a {
     text-decoration: none;
     transition: all .3s ease;
 }
-
-
-
 .container {
-    max-width: 1060px;
-    padding: 0 10px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1060px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 .grid {
     display: grid;
@@ -113,9 +110,6 @@ a {
     /* second-text-color */
     color: #737373;
 }
-
-
-
 /* HERO */
 .hero {
     position: relative;
@@ -243,9 +237,6 @@ a {
 
     color: #737373;
 }
-
-
-
 /* HEADER */
 .header {
     position: absolute;
@@ -277,9 +268,6 @@ a {
 .header_nav_item:not(:last-child) {
     margin-right: 15px; /* There is already 6px between items (15px + 6px = 21px) */
 }
-
-
-
 /* FEATURES */
 .features {
     padding: 211px 0 80px 0;
@@ -333,9 +321,6 @@ a {
     /* second-text-color */
     color: #737373;
 }
-
-
-
 /* ADVICE */
 .advice {
     background: #FAFAFA;
@@ -371,7 +356,7 @@ a {
 .advice_card_text-part {
     padding: 30px 0 0 29px;
 }
-.advice_card_title {
+.card_title {
     width: 130px;
     margin-bottom: 15px;
 
@@ -387,7 +372,7 @@ a {
 
     color: #252B42;
 }
-.advice_card_text {
+.card_text {
     width: 179px;
 
     font-style: normal;
@@ -401,4 +386,287 @@ a {
     /* second-text-color */
 
     color: #737373;
+}
+/* CONTACT */
+.contact {
+    padding: 80px 0 148px 0;
+    background: #F3F3F3;
+}
+.contact_container {
+
+}
+.contact_title {
+
+}
+.contact_text {
+
+}
+.contact_grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+.contact_bottom-side {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_card {
+    width: 328px;
+    padding: 50px 0;
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .6s ease;
+}
+.contact_card:hover {
+    padding: 80px 0;
+
+    /* dark-background-color */
+    background: #252B42;
+}
+.contact_card:hover svg {
+    fill: #FFFFFF;
+}
+.contact_card:hover .contact_card_email {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_card_title {
+    color: #FFFFFF;
+}
+.contact_card:hover .contact_card_button {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.contact_card_img svg {
+    fill: #00A0C1;
+}
+.contact_card_emails_div {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_card_email {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* text-color */
+    color: #252B42;
+}
+.contact_card_title {
+    text-align:center;
+}
+.contact_card_button {
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.2px;
+
+    /* primary-color */
+    color: #FFA62B;
+
+    border: solid 1px #FFA62B;
+    border-radius: 5px;
+}
+.contact_card_button:hover {
+    color: #FFFFFF;
+    background: #FFA62B;
+}
+/* ABOUT */
+.about {
+    background: #FFFFFF;
+    padding: 100px 0;
+}
+.about_title {
+    width: 473px;
+}
+.about_text {
+    margin-top: 15px;
+}
+.about_bottom-side {
+    margin-top: 100px;
+
+    display: flex;
+
+}
+.about_bottom-side_title {
+    width: 324px;
+}
+.about_bottom-side_right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* CLIENTS */
+.clients {
+    padding-top: 50px;
+    height: 262px;
+
+    background: #FAFAFA;
+}
+.clients_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* NEWSLETTER */
+.newsletter_background {
+    position: relative;
+    height: 77px;
+
+    /* dark-background-color */
+    background: #252B42;
+}
+.newsletter {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 986px;
+    height: 124px;
+    padding: 0 49px;
+
+    /* secondary-color-2 */
+    background: #16697A;
+    border-radius: 2px;
+}
+.newsletter_title {
+    width: 258px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    letter-spacing: 0.1px;
+
+    /* light-text-color */
+    color: #FFFFFF;
+}
+.newsletter_form {
+    display: flex;
+}
+.newsletter_form_input_email {
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+
+    height: 58px;
+    width: 333px;
+    padding-left: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.2px;
+
+    /* second-text-color */
+
+    color: #252B42;
+}
+.newsletter_form_input_email::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.2px;
+
+    /* second-text-color */
+
+    color: #737373;
+}
+.newsletter_form_btn {
+    /* primary-color */
+    background: #FFA62B;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+
+    height: 58px;
+    padding: 0 22.5px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.2px;
+
+    /* light-text-color */
+    color: #FFFFFF;
+}
+.newsletter_form_btn:hover {
+    color: #FFA62B;
+    background: #F9F9F9;
+    border-color: #FFA62B;
+}
+/* CONSULTING */
+.consulting {
+    padding: 40px 0;
+}
+.consulting_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.consulting_left-side {
+    display: flex;
+    flex-direction: column;
+}
+.consulting_title {
+    margin-bottom: 10px;
+}
+.consulting_btn {
+    padding: 14px 39px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.2px;
+
+    /* light-text-color */
+    color: #FFFFFF;
+
+    /* primary-color */
+    background: #FFA62B;
+    border: solid 1px #FFA62B;
+    border-radius: 5px;
+}
+.consulting_btn:hover {
+    background: #FFFFFF;
+    color: #FFA62B;
 }
