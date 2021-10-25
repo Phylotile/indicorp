@@ -407,30 +407,27 @@ a {
 
 /* CONTACT */
 .contact {
-    max-height: 538.719px;
     padding: 80px 0 148px 0;
     background: #F3F3F3;
-}
-.contact_container {
-
-}
-.contact_title {
-
-}
-.contact_text {
-
 }
 .contact_grid {
     grid-template-columns: repeat(3, 1fr);
 }
 .contact_bottom-side {
-    margin-top: 110px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.contact_card_animation_div {
+    height: 393px;
+
+    display: flex;
+    align-items: center;
+}
 .contact_card {
     width: 328px;
+    /*height: 333px;*/
     padding: 50px 0;
     background: #FFFFFF;
 
@@ -443,6 +440,7 @@ a {
 }
 .contact_card:hover {
     padding: 80px 0;
+    /*height: 100%;*/
 
     /* dark-background-color */
     background: #252B42;
