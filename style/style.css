@@ -255,6 +255,7 @@ a {
     margin: 0 auto;
 }
 .header_container {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -283,37 +284,51 @@ a {
 .header_nav_item:not(:last-child) {
     margin-right: 15px; /* There is already 6px between items (15px + 6px = 21px) */
 }
-.burger_menu {
+
+
+
+.menu-btn {
     position: absolute;
-    top: 49px;
-    right: 60px;
+    right: -106px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    transform: rotateY(180deg);
+    transition: all .3s ease;
 }
-.burger_menu:hover {
+.menu-btn:hover {
     cursor: pointer;
 }
-.burger {
-    position: relative;
-    height: 2px;
+.menu-btn:hover .menu-btn_burger,
+.menu-btn:hover .menu-btn_burger::before,
+.menu-btn:hover .menu-btn_burger::after {
+    background: #FFA62B;
+}
+.menu-btn_burger {
     width: 17px;
+    height: 2px;
     background: #252B42;
+
+    transition: all .3s ease;
 }
-.burger::before {
+.menu-btn_burger::before,
+.menu-btn_burger::after {
     content: '';
     position: absolute;
-    bottom: 4px;
-    right: 0;
     height: 2px;
+    background: #252B42;
+
+    transition: all .3s ease;
+}
+.menu-btn_burger::before {
     width: 23px;
-    background: #252B42;
+    transform: translateY(-4px);
 }
-.burger::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    right: 0;
-    height: 2px;
-    width: 10px;
-    background: #252B42;
+.menu-btn_burger::after {
+    width: 11px;
+    transform: translateY(4px);
 }
 
 
@@ -463,6 +478,9 @@ a {
     display: flex;
     align-items: center;
 }
+
+
+
 .contact_card {
     width: 328px;
     /*height: 333px;*/
@@ -476,6 +494,26 @@ a {
 
     transition: all .6s ease;
 }
+.contact_middle_card {
+    padding: 80px 0;
+    /*height: 100%;*/
+
+    /* dark-background-color */
+    background: #252B42;
+}
+.contact_middle_card .contact_card_img svg {
+    fill: #FFFFFF;
+}
+.contact_middle_card .contact_card_email {
+    color: #FFFFFF;
+}
+.contact_middle_card .contact_card_title {
+    color: #FFFFFF;
+}
+.contact_middle_card .contact_card_button {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
 .contact_card:hover {
     padding: 80px 0;
     /*height: 100%;*/
@@ -483,16 +521,31 @@ a {
     /* dark-background-color */
     background: #252B42;
 }
-.contact_card:hover svg {
+
+
+/*.contact_card:hover {*/
+/*    padding: 80px 0;*/
+/*    !*height: 100%;*!*/
+
+/*    !* dark-background-color *!*/
+/*    background: #252B42;*/
+/*}*/
+.contact_side_card:hover svg {
     fill: #FFFFFF;
 }
-.contact_card:hover .contact_card_email {
+.contact_side_card:hover .contact_card_email, .contact_side_card:hover .contact_card_title {
     color: #FFFFFF;
 }
-.contact_card:hover .contact_card_title {
-    color: #FFFFFF;
+/*.contact_side_card:hover .contact_middle_card .contact_card_email, .contact_side_card:hover  .contact_middle_card .contact_card_title {*/
+/*    color: #252B42;*/
+/*}*/
+.contact_side_card:hover .contact_middle_card {
+    background: #FFFFFF;
+
+    padding: 50px 0;
 }
-.contact_card:hover .contact_card_button {
+
+.contact_side_card:hover .contact_card_button {
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
