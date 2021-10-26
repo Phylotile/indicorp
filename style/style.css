@@ -250,12 +250,18 @@ a {
 .header {
     position: absolute;
     top: 36px;
-    left: 195px;
-    width: 503px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .header_container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.div_logo {
+    margin-right: 117px;
 }
 .header_nav_item {
     font-style: normal;
@@ -276,6 +282,38 @@ a {
 }
 .header_nav_item:not(:last-child) {
     margin-right: 15px; /* There is already 6px between items (15px + 6px = 21px) */
+}
+.burger_menu {
+    position: absolute;
+    top: 49px;
+    right: 60px;
+}
+.burger_menu:hover {
+    cursor: pointer;
+}
+.burger {
+    position: relative;
+    height: 2px;
+    width: 17px;
+    background: #252B42;
+}
+.burger::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    height: 2px;
+    width: 23px;
+    background: #252B42;
+}
+.burger::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 2px;
+    width: 10px;
+    background: #252B42;
 }
 
 
@@ -881,9 +919,6 @@ a {
 .footer_icons {
     display: flex;
 }
-/*.footer_icons:not(:last-child) {*/
-/*    margin-right: 20px;*/
-/*}*/
 .footer_icon {
     transition: all .6s ease;
 }
